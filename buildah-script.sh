@@ -11,6 +11,12 @@ reset=$(tput sgr0)
 
 #set -x
 
+# Check if buildah is installed
+if ! command -v buildah &> /dev/null; then
+    echo "Buildah is not installed. Please install it first."
+    exit 1
+fi
+
 IMAGE_NAME=helloc
 
 TEMP_DIR=$(mktemp -d)
@@ -58,7 +64,7 @@ buildah config --cmd '["/app/Hello"]' "$FINAL_CONTAINER"
 # Build final image
 buildah commit "$FINAL_CONTAINER" "$IMAGE_NAME"
 
-# Bereinige temporäre Dateien
+# Clean up temporary files
 rm -rf "$TEMP_DIR"
 
 # Remove final- and builder-container
