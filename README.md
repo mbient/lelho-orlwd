@@ -17,8 +17,8 @@ Ensure that the following software components are installed on your system:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mbient/lelho-orlwd-c.git
-   cd lelho-orlwd-c
+   git clone https://github.com/mbient/lelho-orlwd.git
+   cd lelho-orlwd
    ```
 
 2. Make sure all dependencies are installed.
