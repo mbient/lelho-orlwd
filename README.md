@@ -1,4 +1,4 @@
-# lelho-orlwd-c
+# lelho-orlwd
 
 A buildah-script to create and run a simple c-program.
 
@@ -47,4 +47,4 @@ Contributions are welcome! Please open an issue or create a pull request to sugg
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [BSD 3 License](LICENSE).
